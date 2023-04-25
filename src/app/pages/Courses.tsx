@@ -14,15 +14,15 @@ interface Course {
 const Courses:React.FC = ():JSX.Element => {
     const [courses, setCourses] = useState([]);
 
-    useEffect(()=>{
-        if(courses.length === 0){
-            CoursesDataService.getAll().then((res: { data: React.SetStateAction<never[]>; })=>{
-                setCourses(res.data);
-            }).catch((err: any)=>{
-                console.log(err);
-            });
-        }
-    },[courses]);
+    // useEffect(()=>{
+    //     if(courses.length === 0){
+    //         CoursesDataService.getAll().then((res: { data: React.SetStateAction<never[]>; })=>{
+    //             setCourses(res.data);
+    //         }).catch((err: any)=>{
+    //             console.log(err);
+    //         });
+    //     }
+    // },[courses]);
 
     useEffect(() => {
         (async () => {
