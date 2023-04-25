@@ -24,6 +24,13 @@ const Courses:React.FC = ():JSX.Element => {
         }
     },[courses]);
 
+    useEffect(() => {
+        (async () => {
+             const { data } = await CoursesDataService.getAll();
+             setCourses(data);
+        })();
+    }, []);
+
   return (
     <div className="courses">
         <div className="courses-elem-12"> 

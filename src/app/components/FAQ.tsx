@@ -7,15 +7,22 @@ import { FAQ_TITLE } from '../variables';
 const FAQ:React.FC = () :JSX.Element=> {
   const [faqs, setFaqs] = useState([]);
 
-  useEffect(()=>{
-      if(faqs.length === 0) {
-        FaqsDataService.getAll().then((res) => {
-          setFaqs(res.data);
-          }).catch((err)=>{
-              console.log(err);
-          });
-      }
-  },[faqs]);
+  // useEffect(()=>{
+  //     if(faqs.length === 0) {
+  //       FaqsDataService.getAll().then((res) => {
+  //         setFaqs(res.data);
+  //         }).catch((err)=>{
+  //             console.log(err);
+  //         });
+  //     }
+  // },[faqs]);
+
+  useEffect(() => {
+    (async () => {
+         const { data } = await FaqsDataService.getAll();
+         setFaqs(data);
+    })();
+  }, []);
 
   return (
     <div className="FAQ">
