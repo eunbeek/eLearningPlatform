@@ -1,0 +1,16 @@
+.EmailForm {
+    margin-top: 70px;
+    width: 1000px;
+}
+
+.email_form_header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#submit_btn {
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    color: black;
+    border-color: rgb(210, 210, 210);
+}
