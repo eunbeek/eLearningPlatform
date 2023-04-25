@@ -6,6 +6,7 @@
     "node": "19.8.1",
     "npm": "9.5.1"
   },
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
