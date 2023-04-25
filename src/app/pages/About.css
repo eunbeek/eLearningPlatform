@@ -1,0 +1,105 @@
+
+.about-elem-1 {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 200px;
+    min-width: 20px;
+    position: relative
+}
+
+.about-elem-2 {
+    padding: 50px 16px 100px 16px;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: auto;
+    min-height: 300px;
+    min-width: 20px;
+    position: relative;
+    display: flex;
+    max-width: 1080px;
+    margin-right: auto
+}
+
+.about-elem-3 {
+    flex-direction: column;
+    row-gap: 16px;
+    width: 50%;
+    height: auto;
+    min-height: 20px;
+    min-width: 20px;
+    position: relative;
+    display: flex
+}
+
+.about-elem-4 {
+    font-family: Kumbh Sans;
+    font-size: 38px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 48px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    display: block;
+    min-height: 10px;
+    min-width: 16px;
+    position: relative
+}
+
+.about-elem-5 {
+    font-family: Kumbh Sans;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 32px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    display: block;
+    min-height: 10px;
+    min-width: 16px;
+    position: relative
+}
+
+.about-elem-6 {
+    font-family: Kumbh Sans;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 29px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    display: block;
+    min-height: 10px;
+    min-width: 16px;
+    position: relative
+}
+
+.about-elem-7 {
+    flex-direction: column;
+    padding: 36px 36px 36px 36px;
+    width: 50%;
+    height: auto;
+    min-height: 20px;
+    min-width: 20px;
+    position: relative;
+    display: flex
+}
+
+.about-elem-8 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 300px;
+    position: relative
+}
