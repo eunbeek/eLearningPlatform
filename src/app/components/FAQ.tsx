@@ -8,14 +8,10 @@ const FAQ:React.FC = () :JSX.Element=> {
   const [faqs, setFaqs] = useState([]);
   
   useEffect(() => {
-    if(false){
     (async () => {
          const { data } = await FaqsDataService.getAll();
          setFaqs(data);
     })();
-    }else {
-      setFaqs([]);
-    }
   }, []);
 
   return (
