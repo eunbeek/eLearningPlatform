@@ -3,7 +3,7 @@ import http from "../../http-common";
 class FaqsDataService {
 
   getAll() {
-    return http.get("/faqs");
+    return http.get("/faqs/all");
   }
 
 }

@@ -6,8 +6,8 @@ import { COURSES_SECTION_01_BTN, COURSES_SECTION_01_CARD_01_DESC, COURSES_SECTIO
 
 interface Course {
     id: number,
-    name: string,
-    description: string, 
+    courseName: string,
+    courseDesc: string, 
     active: boolean,
     link: string
 }
@@ -15,14 +15,10 @@ const Courses:React.FC = ():JSX.Element => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        if(false){
         (async () => {
              const { data } = await CoursesDataService.getAll();
              setCourses(data);
         })();
-        } else {
-            setCourses([]);
-        }
     }, []);
 
   return (
@@ -76,9 +72,6 @@ const Courses:React.FC = ():JSX.Element => {
                     </div>
                 </div>
             </div>
-            <button className="courses-elem-35">
-                <p>{COURSES_SECTION_01_BTN}</p>
-            </button>
         </div>
         <div className="courses-elem-104">
             <div className="courses-elem-105"> 
@@ -93,13 +86,13 @@ const Courses:React.FC = ():JSX.Element => {
                 {courses && courses.map((course: Course) => (
                     <div className="courses-section-02" key={course.id}> 
                         <span className="courses-section-02-title">
-                            <p>{course.name}</p>
+                            <p>{course.courseName}</p>
                         </span>
                         <span className="courses-section-02-desc">
-                            <p>{course.description}</p>
+                            <p>{course.courseDesc}</p>
                         </span>
                         <button className="courses-section-02-btn">
-                            <a href={course.link}>Start Now</a>
+                            <a href='./'>Start Now</a>
                         </button>
                     </div>
                 ))}
